@@ -1,17 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>Daniel Pedroza</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport"     content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"  content="Daniel Pedroza Personal Profile Webpage and Portafolio">
+  <meta name="author"       content="Daniel Pedroza">
+
+  <!--  opg -->
+  <meta property="og:title" content="Daniel Pedroza" />
+  <meta property="og:type"  content="website" />
+  <meta property="og:url"   content="https://daniepusb.github.io" />
+  <meta property="og:image" content="https://daniepusb.github.io/assets/img/profile_daniel_github.jpg" />
+  <meta property="og:site_name" content="daniepusb.github.io">
+  <meta property="og:description" content="#DanielPedroza Personal Profile Webpage and Portafolio">
+  <meta name="telegram:channel" content="@danielpedroza">
+
+
+  <link rel="canonical" href="https://daniepusb.github.io" />
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+ 
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles-->
+  <link href="css/main.css" rel="stylesheet">
+
+
 </head>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
 
+<body class="bg-light">
+
+<header>
+    <div class="collapse bg-dark " id="navbarToggleExternalContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Daniel Pedroza is a highly-skilled professional with more than 8 years in the software development business.
+               His work has been related to the End to End cycle of the software development, as a project manager, scrum master,
+                front end and back end developer, and product manager. 
+                Looking for a challenging position in a leading company, to create and maintain valuable products that make companies more competitive, using top-level technologies and methodologies.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://linkedin.com/in/danielpedroza87" class="text-white" target="_blank">Follow on LinkedIn</a></li>
+              <li><a href="https://github.com/daniepusb" class="text-white" target="_blank">Follow on GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+        <button class="navbar-toggler right" type="button" data-toggle="collapse"data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+</header>
+
+
+
+<!-- Main -->
+<main role="main" class="package">
+
+  <div class="side left-side text-center">
+    <div class="container">
+        
+      <div class="row">
+          <div class="col-6 offset-3 col-lg-4 offset-lg-4">
+            <img class="mt-3 mb-3 circular" src="assets/img/profile_daniel_github.jpg" alt="profile_daniel_github">
+          </div>
+        </div>
+  
+      <div class="row">
+        <div class="col-12">
+          <h1>DANIEL PEDROZA</h1>
+          <p class="lead text-muted">Analyst Programmer<abbr data-toggle="tooltip" data-placement="top" title="PROGRAMMER"></abbr></p>
+          <p class="btn-group hide">
+            <a id="btnCV" href="#" class="btn btn-primary my-2">CV</a>
+            <a id="btnRepos" href="#" class="btn btn-secondary my-2">Projects</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="side right-side hide">
+    <section id="cv" class="cv" role="cv">
+
+    </section>
+
+    <section id="repo__section hide" class="repo" role="repo" >
+      <div class="album py-5">
+        <div class="container">
+          <div id="repos__content" class="row">
+            <!-- div will fill with ajax -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+</main>
+<!-- End Main -->
+
+<!-- Footer -->
+<footer class="text-muted hide">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+  </div>
+</footer>
+<!-- End Footer -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="js/general.js"></script>
+<script src="js/repos.js"></script>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
 </html>
